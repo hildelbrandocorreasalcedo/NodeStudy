@@ -3,7 +3,6 @@ const crypto = require('node:crypto')
 const cors = require('cors')
 
 const movies = require('./movies.json')
-const { json } = require('body-parser')
 const { validateMovie, validaParcialMovie } = require('./schemas/movies')
 
 const app = express()
@@ -137,5 +136,5 @@ app.delete('/movies/:id', (req, res) => {  // Cambiado de '/products/:id' a '/mo
 const PORT = process.env.PORT ?? 3002
 
 app.listen( PORT, () =>{
-    console.log(`Server lintening o port http//localhost:${PORT}`);
+    console.log(`Server lintening o port http://localhost:${PORT}`);
 })

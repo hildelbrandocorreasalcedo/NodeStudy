@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "2.8.5",
     "express": "4.21.0",
+    "nodestudy-api-rest": "file:",
     "zod": "3.23.8"
   }
 }
